@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CT</title>
+        <meta charset="UTF-8" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.1.60/inputmask/jquery.inputmask.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body onload="myOnload()">
+  <header>
+    <div class="navbar-fixed">
+      <nav class="navbar blue">
+        <div class="nav-wrapper">
+          <a href="#!" class="brand-logo white-text text-darken-4 center">CT</a>
+          <ul id="nav-mobile" class="right">
+            <li class="hide-on-med-and-down">
+              <a href="#!" data-target="dropdown1" class="dropdown-trigger waves-effect">
+                <i class="material-icons white-text">notifications</i>
+              </a>
+            </li>
+            <li><a href="#!" data-target="chat-dropdown" class="dropdown-trigger waves-effect">
+              <i class="material-icons white-text">settings</i></a>
+              <div id="chat-dropdown" class="dropdown-content dropdown-tabbed" tabindex="0">
+            </li>
+          </ul>
+            <a href="#!" data-target="sidenav-left" class="sidenav-trigger left show-on-large">
+            <i class="material-icons white-text">menu</i></a>
+        </div>
+      </nav>
+    </div>
+    <ul id="sidenav-left" class="sidenav" style="transform: translateX(-105%);">
+      <li class="logback">
+          <a href="#!" class="logo-container">
+            <img src="src/assets/logo_vital-new.svg" class="left" height="70" width="70">
+          <!--<i class="material-icons left white-text">spa</i>-->
+          </a>
+      </li>
+      <li class="no-padding">
+        <ul class="collapsible collapsible-accordion">
+          <li class="bold waves-effect"><a class="collapsible-header" tabindex="0">MRI<i class="material-icons chevron">chevron_left</i></a>
+            <div class="collapsible-body">
+              
+              <ul>
+                <li><a href="\\d6v6zw52\share\COLOMBIA\DOCUMENTOS\ADMON CALI GLORIA\PLANTILLA EXAMENES\CT 2.0\MRI.html" class="waves-effect"target="_blank">MRI<i class="material-icons">web</i></a></li>
+                <li><a href="\\d6v6zw52\share\COLOMBIA\DOCUMENTOS\ADMON CALI GLORIA\PLANTILLA EXAMENES\DOCS\TRAINING\MRI.pdf" class="waves-effect"target="_blank">COMO AGENDAR UN MRI<i class="material-icons">web</i></a></li>
+                
+              </ul>
+            </div>
+            <li class="bold waves-effect"><a class="collapsible-header" tabindex="0">MMO<i class="material-icons chevron">chevron_left</i></a>
+            <div class="collapsible-body">
+              
+              <ul>
+                <li><a href="\\d6v6zw52\share\COLOMBIA\DOCUMENTOS\ADMON CALI GLORIA\PLANTILLA EXAMENES\CT 2.0\MMO.html" class="waves-effect"target="_blank">MMO<i class="material-icons">web</i></a></li>
+                <li><a href="\\d6v6zw52\share\COLOMBIA\DOCUMENTOS\ADMON CALI GLORIA\PLANTILLA EXAMENES\DOCS\TRAINING\MAMMO.pdf" class="waves-effect"target="_blank">COMO AGENDAR UNA MMO<i class="material-icons">web</i></a></li>
+                <li><a href="\\d6v6zw52\share\COLOMBIA\DOCUMENTOS\ADMON CALI GLORIA\PLANTILLA EXAMENES\DOCS\TRAINING\5.1 INF.MAMO.pdf" class="waves-effect"target="_blank">ADD INFO MAMMO<i class="material-icons">web</i></a></li>
+                
+              </ul>
+            </div>
+            <li class="bold waves-effect"><a class="collapsible-header" tabindex="0">CT<i class="material-icons chevron">chevron_left</i></a>
+            <div class="collapsible-body">
+              
+              <ul>
+                <li><a href="\\d6v6zw52\share\COLOMBIA\DOCUMENTOS\ADMON CALI GLORIA\PLANTILLA EXAMENES\CT 2.0\CT.html" class="waves-effect"target="_blank">CT<i class="material-icons">web</i></a></li>
+                <li><a href="\\d6v6zw52\share\COLOMBIA\DOCUMENTOS\ADMON CALI GLORIA\PLANTILLA EXAMENES\DOCS\TRAINING\CT.pdf" class="waves-effect"target="_blank">COMO AGENDAR UN CT<i class="material-icons">web</i></a></li>
+                
+              </ul>
+            </div>
+            <li class="bold waves-effect"><a class="collapsible-header" tabindex="0">US<i class="material-icons chevron">chevron_left</i></a>
+            <div class="collapsible-body">
+              
+              <ul>
+                <li><a href="\\d6v6zw52\share\COLOMBIA\DOCUMENTOS\ADMON CALI GLORIA\PLANTILLA EXAMENES\CT 2.0\US.html" class="waves-effect"target="_blank">US<i class="material-icons">web</i></a></li>
+                <li><a href="\\d6v6zw52\share\COLOMBIA\DOCUMENTOS\ADMON CALI GLORIA\PLANTILLA EXAMENES\DOCS\TRAINING\3. Ultrasound.pdf" class="waves-effect"target="_blank">COMO AGENDAR UN US<i class="material-icons">web</i></a></li>
+                
+              </ul>
+            </div>
+
+             <li class="bold waves-effect"><a class="collapsible-header" tabindex="0">XRAY<i class="material-icons chevron">chevron_left</i></a>
+            <div class="collapsible-body">
+              
+              <ul>
+                <li><a href="\\d6v6zw52\share\COLOMBIA\DOCUMENTOS\ADMON CALI GLORIA\PLANTILLA EXAMENES\CT 2.0\XRAY.html" class="waves-effect"target="_blank">XRAY<i class="material-icons">web</i></a></li>
+                <li><a href="\\d6v6zw52\share\COLOMBIA\DOCUMENTOS\ADMON CALI GLORIA\PLANTILLA EXAMENES\DOCS\TRAINING\XRAYS EKG HOLTER DEXA.pdf" class="waves-effect"target="_blank">COMO AGENDAR UN XRAY<i class="material-icons">web</i></a></li>
+                
+              </ul>
+            </div>
+
+            <li class="bold waves-effect"><a class="collapsible-header" tabindex="0">NM<i class="material-icons chevron">chevron_left</i></a>
+            <div class="collapsible-body">
+              
+              <ul>
+                <li><a href="\\d6v6zw52\share\COLOMBIA\DOCUMENTOS\ADMON CALI GLORIA\PLANTILLA EXAMENES\CT 2.0\NM.html" class="waves-effect"target="_blank">NM<i class="material-icons">web</i></a></li>
+                <li><a href="\\d6v6zw52\share\COLOMBIA\DOCUMENTOS\ADMON CALI GLORIA\PLANTILLA EXAMENES\DOCS\TRAINING\NM.pdf" class="waves-effect"target="_blank">COMO AGENDAR UN NM<i class="material-icons">web</i></a></li>
+                
+              </ul>
+            </div>
+
+            <li class="bold waves-effect"><a class="collapsible-header" tabindex="0">NCV<i class="material-icons chevron">chevron_left</i></a>
+            <div class="collapsible-body">
+              
+              <ul>
+                <li><a href="\\d6v6zw52\share\COLOMBIA\DOCUMENTOS\ADMON CALI GLORIA\PLANTILLA EXAMENES\CT 2.0\NCV.html" class="waves-effect"target="_blank">NCV<i class="material-icons">web</i></a></li>
+                <li><a href="\\d6v6zw52\share\COLOMBIA\DOCUMENTOS\ADMON CALI GLORIA\PLANTILLA EXAMENES\DOCS\TRAINING\5. PFT-NCV.pdf" class="waves-effect"target="_blank">COMO AGENDAR UN NCV<i class="material-icons">web</i></a></li>
+                
+              </ul>
+            </div>
+
+
+            <li class="bold waves-effect"><a class="collapsible-header" tabindex="0">SLEEP<i class="material-icons chevron">chevron_left</i></a>
+            <div class="collapsible-body">
+              
+              <ul>
+                <li><a href="\\d6v6zw52\share\COLOMBIA\DOCUMENTOS\ADMON CALI GLORIA\PLANTILLA EXAMENES\CT 2.0\SLEEP.html" class="waves-effect"target="_blank">SLEEPS<i class="material-icons">web</i></a></li>
+                <li><a href="\\d6v6zw52\share\COLOMBIA\DOCUMENTOS\ADMON CALI GLORIA\PLANTILLA EXAMENES\DOCS\TRAINING\SLEEP STUDY 1.pdf" class="waves-effect"target="_blank">COMO AGENDAR UN SLEEP<i class="material-icons">web</i></a></li>
+                
+              </ul>
+            </div>
+
+          <li class="no-padding">
+        <ul class="collapsible collapsible-accordion">
+          <li class="bold waves-effect"><a class="collapsible-header" tabindex="0">Vital Information<i class="material-icons chevron">chevron_left</i></a>
+            <div class="collapsible-body">
+              
+              <ul>
+                <li><a href="\\d6v6zw52\share\COLOMBIA\DOCUMENTOS\ADMON CALI GLORIA\PLANTILLA EXAMENES\DOCS\TRAINING\1. FLUJOGRAMA.pdf" class="waves-effect"target="_blank">Flujograma<i class="material-icons">web</i></a></li>
+                <li><a href="//d6v6zw52/share/COLOMBIA/DOCUMENTOS/ADMON%20CALI%20GLORIA/PLANTILLA%20EXAMENES/CT%202.0/VITAL%20IMAGING%20EXT.html" class="waves-effect"target="_blank">Vital Workers<i class="material-icons">web</i></a></li>
+                <li><a href="\\d6v6zw52\share\COLOMBIA\DOCUMENTOS\ADMON CALI GLORIA\PLANTILLA EXAMENES\DOCS\VERIFICATIONS\VITAL GENERAL INFORMATION.pdf" class="waves-effect" target="_blank">General Information Miami<i class="material-icons">web</i></a></li>
+                
+                
+                
+                </ul>
+            </div>
+          </li>
+
+
+
+
+
+          <li class="bold waves-effect"><a class="collapsible-header" tabindex="0">Scheduler Guide<i class="material-icons chevron">chevron_left</i></a>
+            <div class="collapsible-body">
+              <ul>
+               <div class="collapsible-body" style="display: block;">
+              <ul>
+                <li><a href="https://larkingimaginginc-my.sharepoint.com/:x:/g/personal/jlosada_vitalimg_com/EQQopgB48IVHj30lJus09KoBnpShvUI-MAhNtC9wp92B5g?e=OOJGDn" class="waves-effect"target="_blank">Scheduler Help<i class="material-icons">web</i></a></li>
+                <li><a href="\\d6v6zw52\share\COLOMBIA\DOCUMENTOS\ADMON CALI GLORIA\PLANTILLA EXAMENES\DOCS\VERIFICATIONS\CPTS NUEVOS MAYO 2024.pdf" class="waves-effect active" target="_blank">Cpt Codes<i class="material-icons">web</i></a></li>
+                <li><a href="\\d6v6zw52\share\COLOMBIA\DOCUMENTOS\ADMON CALI GLORIA\PLANTILLA EXAMENES\DOCS\VERIFICATIONS\TRANSPORTATION.pdf" class="waves-effect" target="_blank">Transportation<i class="material-icons">web</i></a></li>
+                <li><a href="\\d6v6zw52\share\COLOMBIA\DOCUMENTOS\ADMON CALI GLORIA\PLANTILLA EXAMENES\DOCS\TRAINING\STAT APPTS.pdf" class="waves-effect" target="_blank">Stat Appts<i class="material-icons">web</i></a></li>
+                <li><a href="\\d6v6zw52\share\COLOMBIA\DOCUMENTOS\ADMON CALI GLORIA\PLANTILLA EXAMENES\DOCS\TRAINING\10. PRESCRIPTION PAD.pdf" class="waves-effect" target="_blank">Prescription Pad (We Do)<i class="material-icons">web</i></a></li>
+                <li><a href="\\d6v6zw52\share\COLOMBIA\DOCUMENTOS\ADMON CALI GLORIA\PLANTILLA EXAMENES\DOCS\VERIFICATIONS\12. EXAMS WE DO NOT DO.pdf" class="waves-effect" target="_blank">We Do Not Do<i class="material-icons">web</i></a></li>
+                <li><a href="\\d6v6zw52\share\COLOMBIA\DEPARTMENTS\SCHEDULING\SCHEDULERS\AMINISTRACION GENERAL\1.1.2 DISTRIBUCION DE SALAS.pdf" class="waves-effect" target="_blank">Rooms Distribution<i class="material-icons">web</i></a></li>       
+                <li><a href="\\d6v6zw52\share\COLOMBIA\DOCUMENTOS\ADMON CALI GLORIA\PLANTILLA EXAMENES\DOCS\TRAINING\AGE STANDARD.pdf" class="waves-effect" target="_blank">Age Standards<i class="material-icons">web</i></a></li>
+              </ul>
+            </div>
+
+            <li class="no-padding">
+        <ul class="collapsible collapsible-accordion">
+          <li class="bold waves-effect active"><a class="collapsible-header" tabindex="0">Scanning<i class="material-icons chevron">chevron_left</i></a>
+            <div class="collapsible-body" style="display: block;">
+              <ul>
+                <li><a href="\\d6v6zw52\share\COLOMBIA\DOCUMENTOS\ADMON CALI GLORIA\PLANTILLA EXAMENES\DOCS\TRAINING\Scanning.png" class="waves-effect"target="_blank">Faxes & Email<i class="material-icons">web</i></a></li>
+                
+              </ul>
+            </div>
+          </li>
+
+          
+
+      <li class="no-padding">
+        <ul class="collapsible collapsible-accordion">
+          <li class="bold waves-effect active"><a class="collapsible-header" tabindex="0">Special Agreements<i class="material-icons chevron">chevron_left</i></a>
+            <div class="collapsible-body" style="display: block;">
+              <ul>
+                
+                <li><a href="\\d6v6zw52\share\COLOMBIA\DOCUMENTOS\ADMON CALI GLORIA\PLANTILLA EXAMENES\DOCS\AUTH\SOUTH FLORIDA ENT.pdf" class="waves-effect"target="_blank">South Florida Ent<i class="material-icons">web</i></a></li>
+                <li><a href="\\d6v6zw52\share\COLOMBIA\DOCUMENTOS\ADMON CALI GLORIA\PLANTILLA EXAMENES\DOCS\AUTH\LEON MEDICAL CENTER.pdf" class="waves-effect active"target="_blank">Leon<i class="material-icons">web</i></a></li>
+                <li><a href="\\d6v6zw52\share\COLOMBIA\DOCUMENTOS\ADMON CALI GLORIA\PLANTILLA EXAMENES\DOCS\VERIFICATIONS\PLASTIC SURGEONS.pdf" class="waves-effect" target="_blank">Plastic Surgeons<i class="material-icons">web</i></a></li>
+                <li><a href="\\d6v6zw52\share\COLOMBIA\DOCUMENTOS\ADMON CALI GLORIA\PLANTILLA EXAMENES\DOCS\TRAINING\RESEARCH.pdf" class="waves-effect" target="_blank">Research<i class="material-icons">web</i></a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="no-padding">
+        <ul class="collapsible collapsible-accordion">
+          <li class="bold waves-effect active"><a class="collapsible-header" tabindex="0">MEDICAL CENTERS BY MARKETERS<i class="material-icons chevron">chevron_left</i></a>
+            <div class="collapsible-body" style="display: block;">
+              <ul>
+                <li><a href="\\d6v6zw52\share\COLOMBIA\DOCUMENTOS\ADMON CALI GLORIA\PLANTILLA EXAMENES\DOCS\CLINICAL\Clinicas.pdf" class="waves-effect"target="_blank">Clinics<i class="material-icons">web</i></a></li>
+                
+              </ul>
+            </div>
+         
+                  <li class="no-padding">
+        <ul class="collapsible collapsible-accordion">
+          <li class="bold waves-effect active"><a class="collapsible-header" tabindex="0">Verification<i class="material-icons chevron">chevron_left</i></a>
+            <div class="collapsible-body" style="display: block;">
+              <ul>
+                <li><a href="\\d6v6zw52\share\COLOMBIA\DOCUMENTOS\ADMON CALI GLORIA\PLANTILLA EXAMENES\DOCS\VERIFICATIONS\Vital Price List.pdf" class="waves-effect"target="_blank">Price List<i class="material-icons">web</i></a></li>
+                <li><a href="\\d6v6zw52\share\COLOMBIA\DOCUMENTOS\ADMON CALI GLORIA\PLANTILLA EXAMENES\DOCS\VERIFICATIONS\DISCOUNT PLANS.pdf" class="waves-effect"target="_blank">Discount Account<i class="material-icons">web</i></a></li>
+                <li><a href="\\d6v6zw52\share\COLOMBIA\DOCUMENTOS\ADMON CALI GLORIA\PLANTILLA EXAMENES\DOCS\VERIFICATIONS\WORKERS' COMPENSATIONS.pdf" class="waves-effect active" target="_blank">Workers Compensations<i class="material-icons">web</i></a></li>
+                <li><a href="\\d6v6zw52\share\COLOMBIA\DOCUMENTOS\ADMON CALI GLORIA\PLANTILLA EXAMENES\DOCS\VERIFICATIONS\PIP.pdf" class="waves-effect active" target="_blank">Pip<i class="material-icons">web</i></a></li>
+                <li><a href="\\d6v6zw52\share\COLOMBIA\DOCUMENTOS\ADMON CALI GLORIA\PLANTILLA EXAMENES\DOCS\VERIFICATIONS\INMATE.pdf" class="waves-effect"target="_blank">Inmates<i class="material-icons">web</i></a></li>
+                <li><a href="\\d6v6zw52\share\COLOMBIA\DOCUMENTOS\ADMON CALI GLORIA\PLANTILLA EXAMENES\DOCS\TRAINING\INSURANCE WE DO TAKE.pdf" class="waves-effect"target="_blank">Insurance We Do Take<i class="material-icons">web</i></a></li>
+                <li><a href="\\d6v6zw52\share\COLOMBIA\DOCUMENTOS\ADMON CALI GLORIA\PLANTILLA EXAMENES\DOCS\VERIFICATIONS\13. INSURANCES WE DONT TAKE_08112022.pdf" class="waves-effect"target="_blank">Insurance We Don't Take<i class="material-icons">web</i></a></li>
+
+                </ul>
+            </div>
+          </li>
+
+
+
+                <li class="no-padding">
+        <ul class="collapsible collapsible-accordion">
+          <li class="bold waves-effect active"><a class="collapsible-header" tabindex="0">Authorization<i class="material-icons chevron">chevron_left</i></a>
+            <div class="collapsible-body" style="display: block;">
+              <ul>
+                <li><a href="https://larkingimaginginc-my.sharepoint.com/:x:/g/personal/jcontreras_vitalimg_com/EYfhEckc6idCuuyrIaNHY2oBnl7EwhhHomJKpUCidlDYFQ?e=5oIMxg&wdOrigin=TEAMS-MAGLEV.p2p_ns.rwc&wdExp=TEAMS-TREATMENT&wdhostclicktime=1714567060951&web=1" class="waves-effect" target="_blank">Insurance Requirements<i class="material-icons">web</i></a></li>
+                <li><a href="\\d6v6zw52\share\COLOMBIA\DOCUMENTOS\ADMON CALI GLORIA\PLANTILLA EXAMENES\DOCS\AUTH\AUTH THROUGH PCP.pdf" class="waves-effect"target="_blank">Auth Through Patients PCP<i class="material-icons">web</i></a></li>
+              </ul>
+            </div>
+          </li>
+
+
+                <li class="no-padding">
+        <ul class="collapsible collapsible-accordion">
+          <li class="bold waves-effect active"><a class="collapsible-header" tabindex="0">Docs & Labs<i class="material-icons chevron">chevron_left</i></a>
+            <div class="collapsible-body" style="display: block;">
+              <ul>
+                <li><a href="\\d6v6zw52\share\COLOMBIA\DOCUMENTOS\ADMON CALI GLORIA\PLANTILLA EXAMENES\DOCS\LABS\RX.pdf" class="waves-effect"target="_blank">Prescription - Labs<i class="material-icons">web</i></a></li>
+                <li><a href="\\d6v6zw52\share\COLOMBIA\DOCUMENTOS\ADMON CALI GLORIA\PLANTILLA EXAMENES\DOCS\LABS\Clinicas faxes 2023 2.pdf" class="waves-effect"target="_blank">Clinics Faxes<i class="material-icons">web</i></a></li>
+                <li><a href="\\d6v6zw52\share\COLOMBIA\DOCUMENTOS\ADMON CALI GLORIA\PLANTILLA EXAMENES\DOCS\LABS\Auth faxes 2023 2.pdf" class="waves-effect active"target="_blank">Auth Faxes<i class="material-icons">web</i></a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="no-padding">
+        <ul class="collapsible collapsible-accordion">
+          <li class="bold waves-effect active"><a class="collapsible-header" tabindex="0">Medical Records<i class="material-icons chevron">chevron_left</i></a>
+            <div class="collapsible-body" style="display: block;">
+              <ul>
+                <li><a href="\\d6v6zw52\share\COLOMBIA\DOCUMENTOS\ADMON CALI GLORIA\PLANTILLA EXAMENES\DOCS\TRAINING\MEDICAL RECORD.pdf" class="waves-effect"target="_blank">General Information<i class="material-icons">web</i></a></li>
+              </ul>
+            </div>
+          </li>
+
+           
+
+
+                
+
+
+
+                
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </header>
+  <main>
+    <div class="container">
+        <form>
+          <div class="row">
+            <div class="col 12s m12 l12 lg12">
+              <h3>Demographics<a class="waves-effect waves-light btn-floating modal-trigger red pulse btn-small" href="#modal1"><i class="material-icons chevron">info_outline</i></a></h3>  
+            </div>
+            </div>
+              <!-- Modal Structure -->
+              <div id="modal1" class="modal">
+                <div class="modal-content red">
+                  <h5 style="color: #fff;">WHEN YOU START THE DEMOGRAPHIC PLEASE INCLUDE THESE ITEMS:</h5>
+                  <ul>
+                    <li style="color: #fff;">1. DO NOT DISCLOSE PT INFORMATION, JUST CONFIRM IT</li>
+                    <li style="color: #fff;">2. IS AN APARTMENT OR A HOUSE?</li>
+                    <li style="color: #fff;">3. PLEASE GIVE ME A SECOND PHONE NUMBER?</li>
+                  </ul>
+                </div>
+                <div class="modal-footer">
+                  <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+                </div>
+              </div>
+              <!-------------------->
+          <div class="row z-depth-3 white">
+            <div class="input-field col s12 m12 l3 lg4">
+              <i class="material-icons prefix">receipt</i>
+              <input type="text" id="autocomplete-input-ct" class="autocomplete">
+              <label for="autocomplete-input">Exam</label>
+              <span style="font-weight: bold; color: red; font-size: 11px;" class="hide" id="stencalcium">DO NOT SCHEDULE IF THE PT HAS A STENT IN THE HEART</span>
+            </div>
+            <div class="input-field col s12 m12 l3 lg4">
+              <select name="subCategory" id="subcategory-contrast">
+                <!--<option value="" disabled selected>Contrast</option>-->
+                <option value="" disabled selected>Contrast</option>
+                <option value="WITH CONTRAST">WITH CONTRAST</option>
+                <option value="WITHOUT CONTRAST">WITHOUT CONTRAST</option>
+                <option value="WITH AND WITHOUT CONTRAST">WITH AND WITHOUT CONTRAST</option> 
+              </select>
+            </div>
+            <div class="input-field col s12 m12 l3 lg4">
+              <i class="material-icons prefix">account_circle</i>
+              <input id="icon_prefix" type="text" class="validate">
+              <label for="icon_prefix">Patient Name</label>
+            </div>
+            <div class="input-field col s12 m12 l3 lg4">
+              <i class="material-icons prefix">phone</i>
+              <input id="boxtel" type="tel" class="validate">
+              <label for="boxtel">Telephone</label>
+              <input class="btn-small white-text waves-effect waves-light green" type="button" value="COPY PHONE" id="btnsgeneral" onclick="copyPhone()">
+            </div>
+            <div class="input-field col s12 m12 l4 lg4">
+              <label>DOB</label>
+              <input class="self-select form-control" type="date" name="dob" id="dob" onchange="edad()" placeholder=""><br>  
+              <span style="font-weight: bold; color: red;" type="" name="" id="edadpt"></span>
+              <!--<input class="btn-small white-text waves-effect waves-light green" type="button" value="COPY DOB" id="btnsgeneral" onclick="copyDateofBirth()">-->
+            </div>
+            <div class="input-field col s12 m12 l3 lg4">
+              <i class="material-icons prefix">payment</i>
+              <input id="autoinsu" type="text" class="autoinsu">
+              <label for="autoinsu">Insurance</label><br>
+              <span style="font-size: 12px; font-weight: bold; color: red;" id="npfi"></span>
+            </div>
+            <div class="input-field col s12 m12 l3 lg4">
+              <i class="material-icons prefix">local_hospital</i>
+              <input type="text" id="autocomplete-doc" class="autocomplete-mri">
+              <label for="autocomplete-doc">Refering Doctor</label><br>
+              <span style="font-weight: bold; color: red;" id="docstatus"></span>
+            </div>  
+            <div class="input-field col s12 m12 l3 lg4">
+              <input id="icon_doc" type="text" class="validate">
+              <label for="icon_doc">Other Refering Doctor</label>
+            </div>
+          </div>
+
+          <div class="row z-depth-3 white">
+            <div class="input-field col s12 m12 l12 lg12">
+              <textarea id="textarea12" class="materialize-textarea"></textarea>
+              <label for="textarea1">Free Typing</label>
+            </div>
+          </div>
+
+        </form>
+        <div class="row">
+          <div class="col 12s m12 l12 lg12">
+            <h3>Note</h3>  
+          </div>
+          </div>
+        <div class="row z-depth-3 white">
+          <div class="row">
+            <form class="col s12 m6 l6 lg6">
+              <div class="row">
+                <div class="input-field col s12 m6 l6 lg6">
+                  <textarea id="textarea1" class="materialize-textarea" readonly></textarea>
+                  <!--<label for="textarea1">Textarea</label>-->
+                  <input class="btn-small white-text waves-effect waves-light orange" type="button" value="COPY NOTE" id="btnsgeneral" onclick="copyNote()">
+                  <input class="btn-small white-text waves-effect waves-light orange" type="button" value="SAVE" id="btnsgeneral" onclick="saveAs()">
+                </div>
+              </div>
+            </form>
+            <form class="col s12 m6 l6 lg6">
+              <div class="row">
+                <div class="input-field col s12 m6 l6 lg6">
+                  <fieldset id="com1">
+                    <legend>APPOINTMENT NOTE DATA:</legend>
+                      <label id="label1"></label>
+                      <label id="label2"></label>
+                      <label id="label3"></label>
+                      <label id="label4"></label>
+                      <label id="label5"></label>
+                      <label id="label6"></label>
+                      <label id="label7"></label>
+                      <label id="label8"></label>
+                      <label id="label9"></label>
+                      <label id="label10"></label>
+                      <label id="label11"></label>
+                      <label id="label12"></label>
+                      <label id="label13"></label>
+                      <label id="label14"></label>
+                      <label id="label15"></label>
+                      <label id="label16"></label>
+                      <label id="label17"></label>
+                      <label id="label18"></label>
+                      <label id="label19"></label>
+                      <label id="label20"></label>
+                      <label id="label21"></label>
+                      <label id="label22"></label>
+                      <label id="label23"></label>
+                      <label id="label24"></label>
+                      <label id="label25"></label>
+                      <label id="label26"></label>
+                      <label id="label27"></label>
+                      <label id="label28"></label>
+                      <label id="label29"></label>
+                      <label id="label30"></label>
+                      <label id="label31"></label>
+                      <label id="label32"></label>
+                      <label id="label33"></label>
+                      <label id="label34"></label>
+                      <label id="label35"></label>
+                      <label id="label36"></label>
+                      <label id="label37"></label>
+                      <label id="label38"></label>
+                      <label id="label39"></label>
+                      <label id="label40"></label>
+                      <label id="label41"></label>
+                      <label id="label42"></label>
+                      <label id="label43"></label>
+                      <label id="label44"></label>
+                      <label id="label45"></label>
+                      <label id="label46"></label>
+                      <label id="label47"></label>
+                      <label id="label48"></label>
+                      <label id="label49"></label>
+                      <label id="label50"></label>
+                      <label id="label51"></label>
+                      <label id="label52"></label>
+                      <label id="label53"></label>
+                      <label id="label54"></label>
+                      <label id="label55"></label>
+                      <label id="label56"></label>
+                      <label id="label57"></label>
+                      <label id="label58"></label>
+                      <label id="label59"></label>
+                      <label id="label60"></label>
+                      
+
+                </fieldset>
+                </div>
+              </div>
+              <input class="btn-small white-text waves-effect waves-light orange" type="button" value="NOTE GENERATOR" id="btnsgeneral" onclick="geneCT()"><br><br>
+              <input class="btn-small white-text waves-effect waves-light orange" type="button" value="CLEAR ALL" id="btnsgeneral" onclick="ClearContent()">
+            </form>
+          </div>  
+        </div>
+        <div class="row">
+          <div class="col 12s m12 l12 lg12">
+            <h3>Questions</h3>  
+          </div>
+        </div> 
+        <div class="row z-depth-3 white"> 
+            <div id="ctcol1" class="col s12 m6 l6 lg6">
+                <span style="font-weight: bold; color: red;" id="mmyt"></span>
+                <span style="font-weight: bold; color: red;" id="mmyt1"></span>
+                <span style="font-weight: bold; color: red;" id="mmyt2"></span>
+              <fieldset>
+              <span id="fristquestions">ARE YOU ALLERGIC:</span><br><br>
+              <label>
+               
+                <span id="fristquestions">IODINE </span><br>
+                <input name="iodine" type="radio" id="r1" value="PT ALLERGIC TO IODINE, " onclick="addtext()"/>
+                <span>YES</span>
+              </label>
+              <label>
+                <input name="iodine" type="radio"  id="r2" value="PT NO ALLERGIC TO IODINE, " onclick="addtext()"/>
+                <span>NO</span>
+              </label><br>
+              <label>
+                <span id="fristquestions">SEA FOOD</span><br>
+                <input name="seafood" type="radio" id="r3" value="PT ALLERGIC TO SEAFOOD, " onclick="addtext()"/>
+                <span>YES</span>
+              </label>
+              <label>
+                <input name="seafood" type="radio" id="r4" value="PT NO ALLERGIC TO SEAFOOD, " onclick="addtext()"/>
+                <span>NO</span>
+              </label> <br>
+              <label>
+                <span id="fristquestions">MANGO </span><br>
+                <input name="mango" type="radio" id="r5" value="PT ALLERGIC TO MANGO, " onclick="addtext()"/>
+                <span>YES</span>
+              </label>
+              <label>  
+                <input name="mango" type="radio" id="r6"  value="PT NO ALLERGIC TO MANGO, " onclick="addtext()"/>
+                <span>NO</span>
+              </label></fieldset><br>
+              <fieldset>
+              <span id="" style="color: red; font-weight: bold; font-size: 11px">LET ME REMIND YOU THAT: <br>THE WEIGHT LIMIT OF THE CT MACHINE IS 300 POUNDS. <br>(IF THE PT WEIGHT MORE THAT 300 POUNDS MUST CALL TO THE DOCTOR OFFICE)</span><br>
+              </fieldset>
+              <label><fieldset><span id="fristquestions">PT AWARE OF THE WEIGTH LIMIT?:</span><br>
+                <input name="awareweight" type="radio" id="r7" value="PT IS AWARE OF WEIGHT LIMIT, " onclick="addtext()" />
+                <span>YES</span>
+              </label>
+              <label>
+                <input name="awareweight" type="radio"  id="r8" value=" " onclick="addtext()" />
+                <span>NO</span>
+
+                <label>
+              <span id="fristquestions"><br>WEIGHT:&nbsp</span><input style="width: 120px" type="text" name="inpwlit" id="inpwlit" onchange="addInputText12()"/>
+            </label>
+              </label>
+              
+              
+              </fieldset><br>
+              
+              <label>
+              <fieldset><span id="fristquestions">DIABETIC PT</span><br>
+                <input name="diabetic" type="radio" id="r9" value="DIABETIC PT, " onclick="addtext()" />
+                <span>YES</span>
+              </label>
+              <label>
+                <input name="diabetic" type="radio" id="r10" value="NO DIABETIC, " onclick="addtext()" />
+                <span>NO</span>
+              </label></fieldset><br>
+              <label>
+              <fieldset><span id="fristquestions">PT WITH RENAL FAILURE</span><br>
+                <input name="rfailure" type="radio" id="r11" value="PT WITH RENAL FAILURE, " onclick="addtext()" />
+                <span>YES</span>
+              </label>
+              
+              <label>
+
+                <input name="rfailure" type="radio" id="r12" value="NO RENAL FAILURE, " onclick="addtext()" />
+                <span>NO</span>
+              </label>
+              </fieldset><br>
+
+               <fieldset>
+                <label>
+                  <input name="rx" type="radio"  id="r15" value="RX ON FILE, " onclick="addtext()"/>
+                  <span id="fristquestions">RX ON FILE</span>
+                </label><br>
+                <label>
+                  <input name="rx" type="radio"  id="r16" value="PT HAS RX, " onclick="addtext()"/>
+                  <span id="fristquestions">PT HAS RX<span id="" style="color: red; font-weight: bold; font-size: 12px"> PLEASE SEND THE RX BY SMS 833/204-5444 OR SCHEDULING@VITALIMG.COM </span><br></span></span>
+                </label><br>
+                <label>
+                  <input name="rx" type="radio"  id="r17" value="DR OFFICE HAS RX, " onclick="addtext()"/>
+                  <span id="fristquestions">DR OFFICE HAS RX</span>
+                </label><br>
+                <label>
+                  <input style="width: 120px;" type="text" name="ptrx" id="inputdoc" onchange="addInputText()"><label id="comt">&nbsp<span id="fristquestions">FROM DOCTORS OFFICE WILL FAX PRESCRIPTION</span> 
+                </label>
+                <label>
+                  <input type="radio" name="ptrx" id="inpdrop4"  value=" " onchange="addInputText()">
+                  <span>N/A</span>
+                </label>
+              </fieldset>
+              
+              <fieldset>
+                <label>
+                <p style="color: red; font-weight: bold; font-size: 12px">LABS CREATININE\EGFR</p>
+                  <fieldset>
+                  <span id="fristquestions">PT HAS RECENT LABS ON &nbsp</span>
+                  
+                  <input style="width: 120px;" type="date" name="" id="inpptel" onchange="addInputText2()">&nbsp &nbsp
+                  <span id="em2"></span>
+                </label>
+                <label>
+                  <input name="inpdrop2" type="radio" id="inpdrop2"  value=" " onchange="addInputText2()">
+                  <span>N/A</span></fieldset><br>
+                </label>
+              
+                <label>
+                <fieldset>
+                <span id="fristquestions">LABS WITH US 15USD</span>
+                  <input name="labs" type="radio"  id="r13" value="LABS WITH US 15USD, " onclick="addtext()"/>
+                  <span>YES</span>
+                </label>
+                <label>
+                  <input name="labs" type="radio"  id="r14" value=" " onclick="addtext()"/>
+                  <span>N/A</span><br>
+                  </fieldset>
+                </label>
+                <fieldset>
+                <label><br><span id="fristquestions">LABS FOR FREE BY &nbsp</span><input style="width: 120px;" type="text" name="" id="labsfree" onchange="addInputText1()">
+                </label>&nbsp &nbsp
+                <label>
+                  <input type="radio" name="inpdrop" id="inpdrop"  value=" " onchange="addInputText1()">
+                  <span>N/A</span></fieldset><br>
+                </label>
+                <label>
+                <fieldset>
+                  <input style="width: 120px;" type="text" name="" id="sedfax" onchange="addInputText3()"><span id="fristquestions">FROM DR OFFICE WILL FAX LABS</span> &nbsp
+                </label>
+                <label>
+                  <input type="radio" name="inpdrop1" id="inpdrop1"  value=" " onchange="aaddInputText3()"> 
+                  <span>N/A</span>
+                </label></fieldset><br>
+                <label>
+                <fieldset>
+                  <span id="fristquestions">DOCTORS OFFICE HAS LABS ON &nbsp</span><input style="width: 120px;" type="date" name="" id="dochaslabs" onchange="addInputText4()">
+                </label>
+                <label>
+                  &nbsp<input type="radio" name="inpdrop3" id="inpdrop3"  value=" " onchange="addInputText4()">
+                  <span>N/A </span>
+                  </fieldset>  
+                </label><br>
+              </fieldset><br>
+             
+              
+              
+              <!--
+              
+              -->
+              
+            </div>
+            <div id="ctcol2" class="col s12 m6 l6 lg6">
+              <fieldset>
+              <label>
+                <span id="fristquestions">TRANSPORTATION</span><br>
+                <input name="transportation" type="radio"  id="r18" value="REQUIRE TRANSPORTATION, " onclick="addtext()"/>
+                <span>YES</span>
+              </label>
+              <div id="hiifacc" class="hide"><br>
+              <label>
+                <span>APPROVED BY:</span>
+                <input style="width: 140px;" type="text" name="" id="inputapprt" onchange="addInputTextTransApp()">
+              </label>
+                &nbsp
+                <label>
+                  <input type="radio" name="ptapptrans" id="r19" value=" " onchange="addInputTextTransApp()">
+                  <span>N/A</span>
+                </label>
+                
+                <label id="datelamm"></label>
+              </div>
+              <label>
+                <input name="transportation" type="radio"  id="r20" value="NO TRANSPORTATION, " onclick="addtext()"/>
+                <span>NO</span>
+              </label></fieldset><br>
+              
+              <fieldset>
+                <label>
+                <span id="fristquestions">SPECIAL NEEDS<span id="" style="color: red; font-weight: bold; font-size: 11px"> <br>IF THE PATIENT HAS SPECIAL NEEDS THEY MUST HAVE REDUCED MOBILITY AND BE ABLE TO ACCESS THE MACHINE BY THEMSELVES OR WITH THE MINIMAL HELP OF A COMPANION </span><br>
+                <span id="fristquestions"s>WHICH SPECIAL NEED?</span>
+                <input style="width: 120px;" type="text" name="" id="inpspn" onchange="addInputText5()">
+                <!--<input name="specialneeds" type="radio"  id="r20" value="SPECIAL NEEDS, " onclick="addtext()"/>
+                <span>YES</span>-->
+              </label>
+
+              <label>
+                <input type="radio" name="ptsp" id="specilneedno"  value="PT HAS NOT SPECIAL NEEDS, " onchange="addInputText5()">
+                <span>NO</span>
+                </label>
+
+              <label>
+                <input type="radio" name="ptsp" id="inpdrop5"  value=" " onchange="addInputText5()">
+                <span>N/A</span>
+              </label></fieldset><br>
+              <!--<label>
+                <input name="specialneeds" type="radio"  id="r21" value="NO SPECIAL NEEDS, " onclick="addtext()"/>
+                <span>NO</span>
+              </label>-->
+              <label>
+              <fieldset>
+              <span id="fristquestions">AWARE OF COMPANION SPECIAL NEED <span id="" style="color: red; font-weight: bold; font-size: 11px">ADULT PERSON WHO CAN DRIVE </span><br></span><br></span>
+                <input name="awarespecialneeds" type="radio"  id="r22" value="AWARE OF COMPANION, " onclick="addtext()" />
+                <span>YES</span>
+              </label>
+              <label>
+                <input name="awarespecialneeds" type="radio"  id="r23" value="NO AWARE OF COMPANION, " onclick="addtext()"/>
+                <span>NO</span>
+              </label></fieldset><br>
+
+
+              <div id="" class="">
+                <fieldset id="com1">
+                 <span style=" font-weight: bold; color: red;" id="sphsti">HOW SCHEDULE THIS APPOINTMENT AND EXAM INFORMATION</span>
+                 <label  style="font-weight: bold; color: black;"id="alert"></label><br>
+                 <label  style="font-weight: bold; color: black;"id="alert1"></label><br>
+                  <label  style="font-weight: bold; color: black;" id="alert2"></label><br>
+                   <label  style="font-weight: bold; color: black;" id="alert3"></label><br>
+                   <label  style="font-weight: bold; color: black;" id="alert4"></label><br>
+                   <label  style="font-weight: bold; color: black;" id="alert5"></label>
+                </fieldset>
+              </div> 
+              <div id="classpre" class="hide">
+                   <fieldset id="com1">
+                     <span style=" font-weight: bold; color: red;" id="prep1">DIET SAMPLE :</span><br>
+                     <span style=" font-weight: bold; color: red;"id="prep1">BREAKFAST :&nbsp</span><span style=" font-weight: bold; color: black;">COMPLETE BREAKFAST AVOID DARK LIQUIDS</span> <br>
+                     <span style=" font-weight: bold; color: red;"id="prep1">LUNCH AND DINNER :&nbsp</span><span style=" font-weight: bold; color: black;">GRILLED CHICKEN BREAST OR GRILLED FISHED, RICE,
+                     SALAD, SOUP OR MASHPOTATOES AND ONLY CLEAR LIQUIDS.</span> <br><br>
+                     <span style=" font-weight: bold; color: red;"id="prep1">PREPARATION</span><br>
+                     <span style=" font-weight: bold; color: black;">NO MORE SOLID EATING AFTER  6:00PM,
+                     2 HOURS AFTER 6:00 PM  APPLY THE FIRST ENEMA, CONTINUE WITH CLEAR LIQUIDS AND WATER,
+                     5 HOURS BEFORE THE EXAM STOP CLEAR LIQUIDS, AND CONTINUE WITH ONLY WATER,
+                     3  HOURS  BEFORE EXAM APPLY THE SECOND ENEMA, CONTINUE WITH WATER,
+                   </span> 
+                   </fieldset>
+                   <br>
+             </div>
+             <div id="classpre1" class="hide">
+                   <fieldset id="com1">
+                     <span style=" font-weight: bold; color: red;" id="prep1">PREPARATION</span><br>
+                     <span style=" font-weight: bold; color: black;">DO NOT EAT FOR 8 HOURS BEFORE THE EXAM, DRINK WATER.
+                    </span>
+                   </fieldset>
+                   <br>
+             </div>
+             <div id="classpre2" class="hide">
+                   <fieldset id="com1">
+                     <span style=" font-weight: bold; color: red;" id="prep1">PREPARATION</span><br>
+                     <span style=" font-weight: bold; color: black;">DO NOT EAT FOR 6 HOURS.<br> PATIENT DRINK 8 TO 10 CUPS OF WATER RIGHT
+                     BEFORE SCAN(HERE).</span>
+                   </fieldset>
+                   <br>
+             </div>
+             <div id="classpre3" class="hide">
+                   <fieldset id="com1">
+                     <span style=" font-weight: bold; color: red;" id="prep1">PREPARATION</span><br>
+                     <span style=" font-weight: bold; color: black;">DO NOT EAT FOR 5-6 HOURS BEFORE THE EXAM.</span>
+                   </fieldset>
+                   <br>
+             </div><br>
+            
+
+            <fieldset>
+              <span id="" style="color: red; font-weight: bold; font-size: 11px">ALL CONTRAST EXAM MUST BE SCHEDULED FROM:<br> 
+                                                                                 HIALEAH: 9:00 AM TO 2:30 PM 
+                                                                                 <br>HOMESTEAD: 9:00 AM TO 3:00 PM <br>
+                                                                                 CORAL WAY: 9:00 AM TO 2:30 PM <br>
+                                                                                 DORAL: 9:00 AM TO 3:00 PM <br>
+                                                                                 MIAMI: 9:00 AM TO 3:00 PM <br> </span><br>
+
+                                                                                               
+              </fieldset>
+              
+              <fieldset>
+                <label>
+                <span id="fristquestions">PT AWARE OF PREPS</span><br>
+                <input name="awarepreps" type="radio"  id="r24" value="PT AOP, " onclick="addtext()"/>
+                <span>YES</span>
+                </label>
+              <label>
+                <input name="awarepreps" type="radio"  id="r25" value="PT NOT AOP, " onclick="addtext()"/>
+                <span>NO</span>
+              </label></fieldset><br>
+
+              <div id="divpthasene" class="hide">
+                <fieldset>
+                  <label>
+                    <input name="ene" id="ene1" type="radio" value="1 ENEMA, " onclick="aopCT()"/>
+                    <span>1 ENEMA</span>
+                  </label><br>
+                  <label>
+                    <input name="ene" id="ene2" type="radio" value="2 ENEMA, " onclick="aopCT()"/>
+                    <span>2 ENEMA</span>
+                  </label><br>
+                  <label>
+                    <input name="fasting" id="fasting1" type="radio" value="FASTING 4 HOURS, " onclick="aopCT()"/>
+                    <span>FASTING 4 HOURS</span>
+                  </label><br>
+                  <label>
+                    <input name="fasting" id="fasting2" type="radio" value="FASTING 6 HOURS, " onclick="aopCT()"/>
+                    <span>FASTING 6 HOURS</span>
+                  </label>
+                  <span id="klooui"></span>
+                </fieldset><br>
+              </div>
+
+              <fieldset>
+
+              <span id="" style="color: green; font-weight: bold; font-size: 11px">CHECK VIEW APPOINTMENTS<br>
+                                                                                 SELECT THE CORRECT PATIENT<br>
+                                                                                 CHOOSE THE FACILITY<br></span> 
+
+                                                                                 </fieldset>
+
+               <fieldset id="com1">
+              <fieldset id="com1">
+              <legend>CLOSING</legend>
+              <label>
+                <input name="radiocls" type="radio" />
+                <span id="fristquestions">Date &nbsp</span>&nbsp &nbsp              
+              </label>
+              <label>
+                <input name="radiocls1" type="radio"/>
+                <span id="fristquestions"> Time &nbsp</span>&nbsp &nbsp  
+              </label>
+              <label>
+                <input name="radiocls2" type="radio"/>
+                <span id="fristquestions"> Exam &nbsp</span>&nbsp &nbsp   
+              </label>
+              <label>
+                <span id="fristquestions"> <br><br>CENTER ADDRESS &nbsp</span>&nbsp &nbsp
+                <br><input name="awarespecialneeds" type="radio"  id="r80" value="7101 SW 99TH AV SUITE 106 MIAMI, FL 33173 " onclick="centersUS()" />
+                <span id="fristquestions"> Miami &nbsp</span>&nbsp &nbsp
+              </label>
+              <label>
+                <input name="awarespecialneeds" type="radio"  id="r81" value="610 WASHINGTON AV HOMESTEAD, FL 33030 " onclick="centersUS()"/>
+                <span id="fristquestions"> Homestead &nbsp</span>&nbsp &nbsp
+              </label>
+                <label>
+                <input name="awarespecialneeds" type="radio"  id="r82" value="3150 SW 22 STREET CORAL WAY MIAMI, FL 33146" onclick="centersUS()"/>
+                <span id="fristquestions"> Coralway &nbsp</span>&nbsp &nbsp
+              </label>
+                <label>
+                <input name="awarespecialneeds" type="radio"  id="r83" value="3320 PALM AV HIALEAH, FL 33012 - WOMEN CENTER: 3333 PALM AV HIALEAH, FL 33012 " onclick="centersUS()"/>
+                <span id="fristquestions"> Hialeah &nbsp</span>&nbsp &nbsp
+                </label>
+                <label>
+                <input name="awarespecialneeds" type="radio"  id="r84" value="3155 NW 82ND AV SUITE 201 DORAL, FL 33122" onclick="centersUS()"/>
+                <span id="fristquestions"> Doral &nbsp</span>&nbsp &nbsp
+                </label>
+                <label>
+                <input name="awarespecialneeds" type="radio"  id="r85" value="1100 NE 125 STREET NORTH MIAMI, FL 33161 " onclick="centersUS()"/>
+                <span id="fristquestions"> North Miami &nbsp</span>&nbsp &nbsp
+                </label>
+
+
+
+                <label style="font-weight: bold; color: red;" id="centerprUS"></label> <br>
+                
+                <label>
+                  <br><input name="rdpr" type="radio"  id="r1" value="" onclick=""/>
+                  <span id="fristquestions"> Preparation &nbsp</span>&nbsp &nbsp
+               </label>
+                <label>
+                  <br><input name="rdpr2" type="radio"  id="rdpr2" value="" />
+                  <span id="fristquestions"> Rx &nbsp</span>&nbsp &nbsp
+                </label><br>      
+                <label>
+                  <input name="rdpr3" type="radio"  id="rdpr3" value="" onclick=""/>
+                  <span id="fristquestions">Photo ID &nbsp</span>&nbsp &nbsp
+                </label><br>
+                <label>
+                  <input name="rdpr4" type="radio"  id="rdpr4" value="" onclick=""/>
+                  <span id="fristquestions">Insurance Card</span>&nbsp &nbsp
+                </label><br>
+                <label>
+                  <input name="rdpr5" type="radio"  id="rdpr5" value="PT AOP, " onclick=""/>
+                <span id="fristquestions">Priors &nbsp</span>&nbsp &nbsp
+                </label>
+
+                <label>
+                  <input name="rdpr6" type="radio"  id="rdpr6" value="" onclick=""/>
+                <span id="fristquestions">Do Not Bring Jewelry,  Any Metal Objects Or Any Valuable Items Because The Centers Will Not Be Responsible For Them &nbsp</span>&nbsp &nbsp
+                </label>
+                
+            </fieldset>
+
+            <fieldset style="border-color: #8277ff; border-width: thick;" id="com1">
+              <span style="font-weight: bold; color: black;" id="spfare">
+              The day before the apppointment we will call you
+              to confirm all this information and copay, if it is necessary. <br>
+              For transportation: On the day of the appointment we
+              will call you 60 minutes before to confirm the exact pick up time<br>
+              Farewells: Is there something else, Can I help you with?.
+              Thank you for choosing Vital Imaging</span>
+            </fieldset>
+            <br>
+              
+
+            </div>
+        </div>
+    </div>
+  </main>
+  <footer class="page-footer blue">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Ayuda Scheduler</h5>
+          <p class="grey-text text-lighten-4">This is a new version of Ayuda Scheduler</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Guia Scheduler</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="https://larkingimaginginc-my.sharepoint.com/:x:/g/personal/jlosada_vitalimg_com/EQQopgB48IVHj30lJus09KoBnpShvUI-MAhNtC9wp92B5g?e=OOJGDn" target="_blank">Ayuda Scheduler</a></li>
+            <li><a class="grey-text text-lighten-3" href="\\d6v6zw52\share\COLOMBIA\DOCUMENTOS\ADMON CALI GLORIA\PLANTILLA EXAMENES\DOCS\VERIFICATIONS\Disponibilidad.png" target="_blank">Disponibilidad</a></li>
+            <li><a class="grey-text text-lighten-3" href="\\d6v6zw52\share\COLOMBIA\DEPARTMENTS\SCHEDULING\SCHEDULERS\AMINISTRACION GENERAL\1.1.2 DISTRIBUCION DE SALAS.pdf" target="_blank">Distribucion De Salas</a></li>
+            <li><a class="grey-text text-lighten-3" href="//d6v6zw52/share/COLOMBIA/DOCUMENTOS/ADMON%20CALI%20GLORIA/PLANTILLA%20EXAMENES/CT%202.0/VITAL%20IMAGING%20EXT.html" target="_blank">Vital Workers</a></li>
+            <li><a class="grey-text text-lighten-3" href="https://larkingimaginginc-my.sharepoint.com/:x:/g/personal/jcontreras_vitalimg_com/EYfhEckc6idCuuyrIaNHY2oBnl7EwhhHomJKpUCidlDYFQ?e=5oIMxg&wdOrigin=TEAMS-MAGLEV.p2p_ns.rwc&wdExp=TEAMS-TREATMENT&wdhostclicktime=1714567060951&web=1" target="_blank">Insurance Requirements</a></li>
+            <li><a class="grey-text text-lighten-3" href="\\d6v6zw52\share\COLOMBIA\DOCUMENTOS\ADMON CALI GLORIA\PLANTILLA EXAMENES\DOCS\VERIFICATIONS\18. MIAMI MAP 2020.pdf" target="_blank">Mapa</a></li>
+            <li><a class="grey-text text-lighten-3" href="\\d6v6zw52\share\COLOMBIA\DOCUMENTOS\ADMON CALI GLORIA\PLANTILLA EXAMENES\DOCS\TRAINING\1. FLUJOGRAMA.pdf" target="_blank">Flujograma</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      © 2023 Copyright
+      Created by Jlosada & Dclavijo
+     </div>
+      <!--<a class="grey-text text-lighten-4 right" href="https://chat-app-800fea.zapier.app/" target="_blank">VitalBOT</a>--> 
+      <a class="btn-flotante" name="action" href="https://chat-app-800fea.zapier.app/" target="_blank">
+        <i class="material-icons  right">android</i>
+        VitalBot
+      </a>
+    </div>
+  </footer>
+  <script type="text/javascript" src="js/scriptplantilla.js"></script> 
+  <link rel="stylesheet" type="text/css" href="css/estilos.css">
+</body>
+</html>

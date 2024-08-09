@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>VITAL PHONE BOOK</title>
+        <meta charset="UTF-8" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.1.60/inputmask/jquery.inputmask.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body onload="myOnload()">
+  <header>
+    <div class="navbar-fixed">
+      <nav class="navbar blue">
+        <div class="nav-wrapper">
+          <a href="#!" class="brand-logo white-text text-darken-4 center">Directory</a>
+          <ul id="nav-mobile" class="right">
+            <li class="hide-on-med-and-down">
+              <a href="#!" data-target="dropdown1" class="dropdown-trigger waves-effect">
+                <i class="material-icons white-text">notifications</i>
+              </a>
+            </li>
+            <li><a href="#!" data-target="chat-dropdown" class="dropdown-trigger waves-effect">
+              <i class="material-icons white-text">settings</i></a>
+              <div id="chat-dropdown" class="dropdown-content dropdown-tabbed" tabindex="0">
+            </li>
+          </ul>
+            <a href="#!" data-target="sidenav-left" class="sidenav-trigger left show-on-large">
+            <i class="material-icons white-text">menu</i></a>
+        </div>
+      </nav>
+    </div>
+    <ul id="sidenav-left" class="sidenav" style="transform: translateX(-105%);">
+      <li class="logback">
+          <a href="#!" class="logo-container">
+            <img src="src/assets/logo_vital-new.svg" class="left" height="70" width="70">
+          <!--<i class="material-icons left white-text">spa</i>-->
+          </a>
+      </li>
+      <li class="no-padding">
+        <ul class="collapsible collapsible-accordion">
+          <li class="bold waves-effect"><a class="collapsible-header" tabindex="0" href="file://d6v6zw52/share/COLOMBIA/DOCUMENTOS/ADMON%20CALI%20GLORIA/PLANTILLA%20EXAMENES/SHAREPOINT/NM.htm" class="waves-effect"target="_blank">NORTH MIAMI<i class="material-icons chevron">chevron_left</i></a>
+            <div class="collapsible-body">
+              
+              
+            </div>
+            <li class="bold waves-effect"><a class="collapsible-header" tabindex="0" href="file://d6v6zw52/share/COLOMBIA/DOCUMENTOS/ADMON%20CALI%20GLORIA/PLANTILLA%20EXAMENES/SHAREPOINT/CW.htm" class="waves-effect"target="_blank">CORAL WAY<i class="material-icons chevron">chevron_left</i></a>
+            <div class="collapsible-body">
+            </div>
+
+
+            <li class="bold waves-effect"><a class="collapsible-header" tabindex="0" href="file://d6v6zw52/share/COLOMBIA/DOCUMENTOS/ADMON%20CALI%20GLORIA/PLANTILLA%20EXAMENES/SHAREPOINT/HIALEAH.htm" class="waves-effect"target="_blank">HIALEAH<i class="material-icons chevron">chevron_left</i></a>
+            <div class="collapsible-body">
+              
+              
+              
+            </div>
+            <li class="bold waves-effect"><a class="collapsible-header" tabindex="0" href="file://d6v6zw52/share/COLOMBIA/DOCUMENTOS/ADMON%20CALI%20GLORIA/PLANTILLA%20EXAMENES/SHAREPOINT/DORAL.htm" class="waves-effect"target="_blank">DORAL<i class="material-icons chevron">chevron_left</i></a>
+            <div class="collapsible-body">
+              
+              
+            </div>
+
+             <li class="bold waves-effect"><a class="collapsible-header" tabindex="0" href="file://d6v6zw52/share/COLOMBIA/DOCUMENTOS/ADMON%20CALI%20GLORIA/PLANTILLA%20EXAMENES/SHAREPOINT/VITAL%20COLOMBIA.htm" class="waves-effect"target="_blank">VITAL COLOMBIA<i class="material-icons chevron">chevron_left</i></a>
+            <div class="collapsible-body">
+              
+             
+            </div>
+
+            <li class="bold waves-effect"><a class="collapsible-header" tabindex="0" href="file://d6v6zw52/share/COLOMBIA/DOCUMENTOS/ADMON%20CALI%20GLORIA/PLANTILLA%20EXAMENES/SHAREPOINT/HOMESTEAD.htm" class="waves-effect"target="_blank">HOMESTEAD<i class="material-icons chevron">chevron_left</i></a>
+            <div class="collapsible-body">
+              
+              
+            </div>
+
+            
+            </div>
+          </li>
+
+  </header>
+
+  <main>
+    <div class="container">
+        <form>
+          <div class="row">
+            <div class="col 12s m12 l12 lg12">
+              <h3>Vital Imaging Directory</h3>  
+            </div>
+            </div>
+              
+          
+            
+            
+            
+            <div class="input-field col s12 m12 l4 lg4">
+              <i class="material-icons prefix">payment</i>
+              <input id="vitwork" type="text" class="vitwork">
+              <label for="vitwork">Vital Workers</label>
+              <br><span id="npfi" style="font-weight: bold; color: red;"></span>
+            </div>
+
+          
+             <div> 
+              <label>
+                <span id="fristquestions"> <br><br>FACILITY &nbsp</span>&nbsp &nbsp
+                <br><input name="awarespecialneeds" type="radio"  id="r80" value="7101 SW 99TH AV SUITE 106 MIAMI, FL 33173 " onclick="centersUS()" />
+                <span id="fristquestions"> Miami &nbsp</span>&nbsp &nbsp
+              </label>
+              <label>
+                <input name="awarespecialneeds" type="radio"  id="r81" value="610 WASHINGTON AV HOMESTEAD, FL 33030 " onclick="centersUS()"/>
+                <span id="fristquestions"> Homestead &nbsp</span>&nbsp &nbsp
+              </label>
+                <label>
+                <input name="awarespecialneeds" type="radio"  id="r82" value="3150 SW 22 STREET CORAL WAY MIAMI, FL 33146" onclick="centersUS()"/>
+                <span id="fristquestions"> Coralway &nbsp</span>&nbsp &nbsp
+              </label>
+                <label>
+                <input name="awarespecialneeds" type="radio"  id="r83" value="3320 PALM AV HIALEAH, FL 33012 - WOMEN CENTER: 3333 PALM AV HIALEAH, FL 33012 " onclick="centersUS()"/>
+                <span id="fristquestions"> Hialeah &nbsp</span>&nbsp &nbsp
+                </label>
+                <label>
+                <input name="awarespecialneeds" type="radio"  id="r84" value="3155 NW 82ND AV SUITE 201 DORAL, FL 33122" onclick="centersUS()"/>
+                <span id="fristquestions"> Doral &nbsp</span>&nbsp &nbsp
+                </label>
+                <label>
+                <input name="awarespecialneeds" type="radio"  id="r85" value="1100 NE 125 STREET NORTH MIAMI, FL 33161 " onclick="centersUS()"/>
+                <span id="fristquestions"> North Miami &nbsp</span>&nbsp &nbsp
+                </label>
+
+
+
+                <label style="font-weight: bold; color: red;" id="centerprUS"></label> <br>
+                </div>
+        
+            
+
+        </form>       
+
+        <form class="col s12 m6 l6 lg6">
+              <div class="row">
+                <div class="input-field col s12 m6 l6 lg6">
+                  <fieldset id="com1">
+                    <legend>INFORMATION CENTERS:</legend>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3595.064943237171!2d-80.35592278870773!3d25.70227371096329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9c7461459329d%3A0xfe78497ceefbbffa!2sVital%20Imaging%20Center-%20Miami%20Center!5e0!3m2!1ses-419!2sus!4v1723120024672!5m2!1ses-419!2sus" width="1020" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                      <img src="src/assets/KENDALL.PNG" class="left" height="890" width="993">
+                      <img src="src/assets/DORAL.PNG" class="left" height="890" width="993">
+                      <img src="src/assets/CORAL WAY.PNG" class="left" height="890" width="993">
+                      <img src="src/assets/HIALEAH.PNG" class="left" height="931" width="993">
+                      <img src="src/assets/HOMESTEAD.PNG" class="left" height="890" width="993">
+                      <img src="src/assets/NORTH MIAMI.PNG" class="left" height="830" width="620">
+                      
+                      
+
+                </fieldset>
+                </div>
+              </div>
+            </form>
+
+<footer class="page-footer blue">
+    <div class="container">
+      <div class="row">
+        <div class="co3 l6 s12">
+          <h5 class="white-text">Vital Imaging Directory</h5>
+          <p class="grey-text text-lighten-4">Access Vital Employee Contact Information</p>
+        </div>
+        
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      © 2023 Copyright
+      Created by Jlosada & Dclavijo
+     </div>
+      <!--<a class="grey-text text-lighten-4 right" href="https://chat-app-800fea.zapier.app/" target="_blank">VitalBOT</a>--> 
+      <a class="btn-flotante" name="action" href="https://chat-app-800fea.zapier.app/" target="_blank">
+        <i class="material-icons  right">android</i>
+        VitalBot
+      </a>
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="js/scriptplantilla.js"></script> 
+  <link rel="stylesheet" type="text/css" href="css/estilos.css">
+
+  
+</body>
+</html>
+
